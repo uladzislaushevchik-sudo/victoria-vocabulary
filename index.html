@@ -9,8 +9,8 @@
 <p style="font-family:system-ui;text-align:center;margin-top:40px">Loading…</p>
 <script>
 async function go() {
-  const names = ['d0.txt', 'd1.txt', 'd2.txt', 'd3.txt', 'd4.txt', 'd5.txt', 'd6.txt'];
-  const v = "20261009n";
+  const names = ['r0.txt', 'r1.txt', 'r2.txt', 'r3.txt', 'r4.txt', 'r5.txt', 'r6.txt'];
+  const v = "20261009r";
   const parts = await Promise.all(
     names.map(n => fetch(n + "?v=" + v).then(r => {
       if (!r.ok) throw new Error("HTTP " + r.status + " for " + n);
